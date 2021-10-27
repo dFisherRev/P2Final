@@ -1,0 +1,12 @@
+#bossDiv{
+    background-image: url(../../assets/bjbg3.jpg);
+    position:center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+#yo{
+    top: 350px;
+    position: relative;
+}

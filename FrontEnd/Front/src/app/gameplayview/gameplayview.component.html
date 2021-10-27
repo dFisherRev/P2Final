@@ -1,0 +1,70 @@
+
+    <div id="bossDiv">
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        </head>
+        
+        
+        
+        
+            
+            <div class="play-background" id="board">
+        
+               <img  id ="jbhead" class = "JBhead" src="../../assets/jack-black-headHFLIP.png" alt="">
+             
+        
+              
+        
+              
+                <!--right cards above left cards below-->
+        
+                <img class="card1" src="../../assets/card-back.png" alt="">
+               <img class="card2" src="../../assets/card-back.png" alt="">
+               <img class="card3" src="../../assets/card-back.png" alt="">
+               <img class="card4" src="../../assets/card-back.png" alt="">
+               <img class="card5" src="../../assets/card-back.png" alt="">
+               <img class="card6" src="../../assets/card-back.png" alt="">
+               
+        
+            </div>
+        
+            <!--second half-->
+        
+            <!--this.deckService.getDeck(this.transferService.getBet())-->
+        
+            <div class="play-background">
+               
+                <div *ngIf="isCollapsed">
+                    <app-betting-section></app-betting-section>
+                
+                </div>
+                <div id="bettingDisplay" *ngIf="isCollapsed">
+                    <button (click)="toggleCollapse()" id="deal" class="btn btn-lg btn-success m-5">DEAL</button>
+                </div>     
+               
+                <div *ngIf="!isCollapsed">
+                    <app-playing-section></app-playing-section>
+                </div>
+                
+                
+                <p id = "bank" class="rounded p-3 border border-warning border-3">Bank:{{this.transferService.bank}} </p>
+               
+               
+                   
+            </div>
+            
+    
+    
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+.bubble {
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 1.2em;
+    color: #220;
+    position: relative;
+    background: #F9F9FF;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px #666666;
+  }
+
+.bubble:after {
+  content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right-color: #F9F9FF;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -10px;
+	margin-left: -20px;
+  } 

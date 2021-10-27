@@ -1,0 +1,16 @@
+<div id=bossDiv>
+    <div id = yo>
+    <form class="form-signin" [formGroup]="form" (submit)="submit()">
+      <h1 >Send Chips To Other Players</h1>
+  
+        <h2 *ngIf = "disp">Success {{message}}</h2>
+
+        <input formControlName="username" type="username" class="form-control" id="floatingInput" placeholder="Recipient Username" required>
+        
+        <input formControlName="chipCount" type="number" class="form-control" id="floatingPassword" placeholder="Amount" required>
+
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
+        <!--<div *ngIf="dispError">Something went wrong Please Try Again</div>-->
+    </form>
+    </div>
+</div>

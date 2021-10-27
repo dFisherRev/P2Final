@@ -1,0 +1,23 @@
+
+<div class="bg-image align-items-center" id="bossDiv">
+    <div class="container-md">
+        <div class="row p-5"></div>
+        <div class="row align-items-center mt-5 pt-5 pb-5">
+            <img class="img-fluid" src="../../assets/jbTitle2.png">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col"></div>
+            
+            <div class="col-lg-6 text-center" *ngIf="!authenticated">
+                
+                    <div *ngIf="y">{{message}}</div>
+                    <button (click)="start()" type="button" class="btn btn-lg btn-block px-5 py-3 shadow" id="startButton">START</button>
+                
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+</div>

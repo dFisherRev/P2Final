@@ -1,0 +1,20 @@
+#bossDiv{
+    background-image: url(../../assets/bjbg3.jpg);
+    position:center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+#stroke{
+    text-shadow:
+    -1px -1px 0 #000,
+     0   -1px 0 #000,
+     1px -1px 0 #000,
+     1px  0   0 #000,
+     1px  1px 0 #000,
+     0    1px 0 #000,
+    -1px  1px 0 #000,
+    -1px  0   0 #000;
+    font-family: "Copperplate", fantasy;
+}

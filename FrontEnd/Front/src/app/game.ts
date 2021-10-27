@@ -1,0 +1,22 @@
+export interface IGame{
+    id:number,
+    gameState:number,
+    isGameStarted:boolean,
+    isPlayersTurn:boolean,
+    gameIsPush:boolean,
+    isGameConcluded:boolean,
+    playerBet:number,
+    playerTotal:number,
+    playerCanDoubleDown:boolean,
+    playerHasDoubledDown:boolean,
+    playerHasBlackJack:boolean,
+    playerHasWon:boolean,
+    isPlayerStanding:boolean,
+    isPlayerBust:boolean,
+    isPlayerWinning:boolean,
+    playerHand:string[],
+    dealerTotal:number,
+    isDealerBust:boolean,
+    isDealerStanding:boolean,
+    dealerHand:string[]
+}

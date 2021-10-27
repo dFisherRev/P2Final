@@ -1,0 +1,16 @@
+2021-10-23 13:56:54 INFO  GameDAO:34 - New game started
+2021-10-24 12:26:25 INFO  QuoteDAO:32 - API is up and running
+2021-10-24 12:27:03 INFO  QuoteDAO:46 - Successful login
+2021-10-25 17:13:13 INFO  QuoteDAO:46 - Successful login
+2021-10-25 17:13:39 INFO  GameDAO:39 - User retrieved from database
+2021-10-25 17:19:05 INFO  QuoteDAO:46 - Successful login
+2021-10-25 17:21:09 INFO  QuoteDAO:46 - Successful login
+2021-10-25 17:22:13 INFO  QuoteDAO:46 - Successful login
+2021-10-25 17:22:28 INFO  GameDAO:64 - New user registered/Profile updated
+2021-10-25 17:22:28 INFO  GameDAO:34 - New game started
+2021-10-25 17:24:02 INFO  GameDAO:51 - Game object retrieved from database
+2021-10-26 12:30:48 INFO  QuoteDAO:46 - Successful login
+2021-10-26 12:38:11 INFO  QuoteDAO:46 - Successful login
+2021-10-26 12:38:26 INFO  QuoteDAO:46 - Successful login
+2021-10-26 12:45:38 INFO  GameDAO:39 - User retrieved from database
+2021-10-26 12:45:39 INFO  GameDAO:64 - New user registered/Profile updated

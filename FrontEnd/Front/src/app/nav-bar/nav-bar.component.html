@@ -1,0 +1,66 @@
+<div id="fullbar">
+        
+
+<span style="display: inline;">
+        <ul style="display: inline;" *ngIf="!authenticated">
+                <li style="display: inline;">
+                        <a routerLink="/" ><button type="button" class="btn btn-success">Home</button> </a>
+                </li>
+                <li style="display: inline;" >
+                        <a routerLink="/login" ><button type="button" class="btn btn-success">Login</button> </a>
+                </li>
+                <li style="display: inline;">
+                        <a routerLink="/register" ><button type="button" class="btn btn-success">Register</button></a>
+                </li>
+                <li style="display: inline;">
+                        {{message}}
+                </li>
+        </ul>
+
+        <ul style="display: inline;" *ngIf="authenticated">
+                <li style="display: inline;">
+                        <a routerLink="/" ><button type="button" class="btn btn-success">Home</button> </a>
+                </li>
+                <li style="display: inline;">
+                        <a routerLink="/account" ><button type="button" class="btn btn-success">Account</button> </a>
+                </li>
+                <li style="display: inline;">
+                        <a routerLink="/" (click)="logout()"><button type="button" class="btn btn-success">Logout</button></a>
+                </li>
+                <li style="display: inline;">
+                        {{message2}}
+                </li>
+        </ul>
+</span>
+
+<div id="rules" *ngIf=!isCollapsed>
+        <app-rules-pop-up></app-rules-pop-up>
+</div>
+
+
+
+<div id=right *ngIf="authenticated" style="display: inline;">
+<span display="display:inline" id="RulesSpan">
+   
+        <button class="button" id="RulesButton" (click) = "toggleCollapse()">Rules</button>
+        
+    
+</span>
+
+<!--
+<span style="display:inline"  id="LeaderboardSpan">
+    
+        <button class="button" id="LeaderboardButtton">Leaderboard</button>
+    
+</span>
+<span id="FrinedsSpan" style="display: inline;">
+        <button class="button" id="FriendsButton">Friends</button>
+</span>
+-->
+</div>
+</div>
+
+
+
+
+

@@ -1,0 +1,29 @@
+	<div id="bossDiv">
+		<div class="container">
+			<div class="row p-5"></div>
+			<div class="row align-items-center mt-5 pt-5 pb-5">
+			  <img class="img-fluid" src="../../assets/jbTitle.png">
+		  </div>
+			<div class="col-12 pt-5">
+				<div id="info" class="col-6 shadow p-4">
+					<div id="infoInner" class="col-12 p-4">
+
+						<h3 style="display: inline;">Account Name: </h3><div style="display: inline;">{{name}}</div>
+						<br><br>
+						<h3 style="display: inline;">Account Username: </h3><div style="display: inline;">{{username}}</div>
+						<br><br>
+						<h3 style="display: inline;">Chips: : </h3><div style="display: inline;">{{chips}}</div>
+						<br><br>
+			
+						
+							<a routerLink="/sendChips" ><button id="acctViewButtons" class="btn btn-lg">send chips</button></a>
+						
+						<br><br>
+						
+							<a routerLink="/acctChange"><button id="acctViewButtons" class="btn btn-lg">update account info</button></a>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>

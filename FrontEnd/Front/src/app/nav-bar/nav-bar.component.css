@@ -1,0 +1,60 @@
+.RulesButton{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    height: 15cm;
+    width:25cm;
+}
+    
+
+.LeaderboardSpan{
+    background-color: darkkhaki;
+    margin-left: 20px;
+}
+span.LeaderboardSpan{
+    margin-left: 10%;
+    position: relative  
+    
+}
+span.RulesSpan{
+    margin-left: 15%;
+}
+
+button{
+    
+    border-radius: 0%;
+    padding: 8px 16px;
+    text-align: center + 10px;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#fullbar{
+    background-color:#ffffff;
+    opacity: .90;
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.col-sm-4{
+    border-radius: 30%;
+}
+.titlemessage{
+    left: 20%;
+
+}
+#rules{
+    left: 0%;
+    top: 20%;
+    position: absolute;
+    z-index: 5;
+}
+
+#right{
+    left: 80px;
+}
+
+
+
+

@@ -1,0 +1,55 @@
+<div class="container">
+
+
+
+    <button class="Hit btn btn-lg btn-danger border border-4 border-warning" (click)="hit()" *ngIf="!hitStayButtonCollapse || this.playState==2">Hit</button>
+
+
+   <!-- <button class="dd" (click)="dd()" *ngIf="!ddCollapse || this.playState ==2">Double Down</button>-->
+
+
+    <button class="Stay btn btn-lg btn-warning border border-4 border-light" (click)="stay()" *ngIf="!hitStayButtonCollapse || this.playState ==2">Stay</button>
+
+
+    <button class="exitGame btn btn-lg btn-success border border-4 border-light" (click)="exitGame()" *ngIf="this.gameState.gameState != 0">Exit Game</button>
+
+<span id = endGame *ngIf="this.gameState.gameState !=0 || this.gameState.playerTotal ==21" style="left:50%;">
+    <p class="endingmessage"*ngIf="this.gameState.playerTotal>tt">You Busted</p>
+    <p class="endingmessage" *ngIf="this.gameState.playerTotal>this.gameState.dealerTotal && this.gameState.playerTotal < this.tt">You won!</p>
+    <p class="endingmessage" *ngIf="this.gameState.playerTotal == this.tt">You Won!</p>
+    <p class="endingmessage" *ngIf="this.gameState.playerTotal > this.tt">You Busted!</p>
+    <p class="endingmessage" *ngIf="this.gameState.dealerTotal > this.tt">You Won!</p>
+
+    <p class="endingmessage" *ngIf="this.gameState.dealerTotal>=this.gameState.playerTotal && this.gameState.dealerTotal <22 ">You Lost!</p>
+    <div class="container d flex"id="dealerTotal">
+        <p id = endDealer class="endingmessage">Dealer Total is:</p>
+        <p id = endDealer class="endingmessage" *ngIf="freeBoolean">{{this.gameState.dealerTotal}}</p>
+    
+    </div>
+
+</span>
+
+
+<p  id="playerTotal" *ngIf="freeBoolean">Your Total: {{this.gameState.playerTotal}}</p>
+<div class="container d flex" id="playerCards">
+    <p>Dealer</p>
+    <img style="top:40%" src="../../assets/card-back.png" alt="">  
+    <img src="{{this.dealerSingleCardImage}}" alt="">
+    <img  src="{{this.dealerCardImage}}" alt="">
+
+
+
+   
+   
+    <div id=newCardsDiv>
+        <img id="newCards"  *ngFor="let cardImage of this.cardImageArray" src="{{cardImage}}">
+    </div>
+   
+
+    
+    
+    <!--<img *ngFor="let cardImage of this.deckService.cardImageArray" src="{{cardImage}}">-->
+
+</div>
+
+</div>

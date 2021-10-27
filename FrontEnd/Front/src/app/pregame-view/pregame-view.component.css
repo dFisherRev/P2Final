@@ -1,0 +1,17 @@
+#bossDiv{
+    background-image: url(../../assets/jbbjBG66.jpg);
+    position:center;
+    background-size: cover;
+    height: 100%;
+    width: 100vw;
+}
+
+#startButton{
+    font-size:40px;
+    color:#ffffff;
+    background-color: #125a24;
+}
+
+#startButton:hover{
+    background-color: #03be03
+}

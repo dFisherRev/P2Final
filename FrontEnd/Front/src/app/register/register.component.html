@@ -1,0 +1,41 @@
+<div id=bossDiv>
+	<div class="container-md">
+		<div class="row p-5"></div>
+		<div class="row align-items-center mt-5 pt-5 pb-4">
+		  <img class="img-fluid" src="../../assets/jbTitle2.png">
+	  </div>
+		<div class="row justify-content-center">
+		      <div class="col-sm-auto bg-light rounded shadow pb-2">
+	                  <form class="form-signin" [formGroup]="form" (submit)="submit()">
+		                  <h1 class="h2 fw-normal mb-3 mt-3 text-center">Please register</h1>
+  
+		                  <input formControlName="name" class="form-control"  placeholder="Name" required>
+  
+		                  <input formControlName="username" type="username" class="form-control" id="floatingInput" placeholder="Username" required>
+		
+		                  <input formControlName="password" type="password" class="form-control mb-3" id="floatingPassword" placeholder="Password" required>
+
+						  <h3>Optional</h3>
+		
+		                  <input formControlName="address" class="form-control"  placeholder="Street Address" required>
+  
+		                  <input formControlName="city" class="form-control" placeholder="city " required>
+  
+		                  <input formControlName="state" class="form-control" placeholder="state " required>
+  
+		                  <input formControlName="zipcode" class="form-control mb-3" placeholder="zipcode " required>
+		
+		                  <input formControlName="cardnumber" class="form-control" placeholder="credit card number " required>
+  
+		                  <input formControlName="expirationdate" class="form-control" placeholder="expiration date " required>
+  
+		                  <input formControlName="securitycode" class="form-control" placeholder="sercurity code " required>
+		
+		                  <input formControlName="dob" class="form-control" placeholder="date of birth " required>
+  
+		                  <button id="registerSubmit" class="w-100 btn btn-lg mt-3" type="submit">Submit</button>
+                        </form>
+                  </div>
+            </div>
+      </div>
+</div>

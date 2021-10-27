@@ -1,0 +1,38 @@
+<div class="container-fluid" id="bossDiv">
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+<form class="form-acct" [formGroup]="form" (submit)="submit()">
+    <h1 class="mb-3 fw-normal text-white text-center pt-5 font-weight-bold" id="stroke">Account Information</h1>
+    <h2 class="h2 mb-3 fw-normal text-white text-center font-weight-bold" id="stroke">adjust any field and submit</h2>
+<br>
+    <input formControlName="name" class="form-control"  placeholder="Name" required>
+    
+    <input formControlName="password" type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+
+    <input formControlName="address" class="form-control"  placeholder="Street Address" required>
+
+    <input formControlName="city" class="form-control" placeholder="city " required>
+
+    <input formControlName="state" class="form-control" placeholder="state " required>
+
+    <input formControlName="zipcode" class="form-control" placeholder="zipcode " required>
+
+    <input formControlName="cardnumber" class="form-control" placeholder="credit card number " required>
+
+    <input formControlName="expirationdate" class="form-control" placeholder="expiration date " required>
+
+    <input formControlName="securitycode" class="form-control" placeholder="security code " required>
+    
+    <input formControlName="dob" class="form-control" placeholder="date of birth " required>
+
+    <input formControlName="email" class="form-control" placeholder="email address " required>
+<br>
+<br>
+    <button class="w-100 btn btn-lg btn-success border" type="submit">Submit</button>
+</form>
+<button class="w-100 btn btn-lg btn-secondary border" (click)="back()">Back</button>
+</div>
+<div class="col-sm-4"></div>
+</div>
+</div>

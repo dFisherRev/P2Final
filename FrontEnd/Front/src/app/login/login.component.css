@@ -1,0 +1,17 @@
+#bossDiv{
+    background-image: url(../../assets/bjbg3.jpg);
+    position:center;
+    background-size: cover;
+    height: 100%;
+    width: 100vw;
+}
+
+#logInSubmit{
+    font-size:24px;
+    color:#ffffff;
+    background-color: #125a24;
+}
+
+#logInSubmit:hover{
+    background-color: #03be03
+}

@@ -1,0 +1,14 @@
+0: user pushes deal button
+    -> deck service calls new deck from api (getDeck())
+    -> deck service passes api responseo to back end (getDeck())
+    -> backend stores game state (javalin backend)
+    -> backend updates front end booleans an passes deck_id to front end (where are these booleans?)
+        ->
+1: User pushes stand/(hit/double down)
+    -> deck service passes player action to back end
+    -> backend evaluates logic, observables are updates
+    -> 
+N: user stands or is bust
+   -> dealer hits or stands until >16 or bust
+End: Payout is assigned, 
+    -> game is reset
